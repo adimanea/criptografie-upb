@@ -1,2 +1,0 @@
-# Exerciții grele
-
