@@ -6,5 +6,5 @@
 
 * [ușor](usor.md);
 * [mediu](mediu.md);
-* [greu](https://github.com/adimanea/criptografie-upb/tree/758f59481e8b113f8ab8dc0b56c69061534b5c47/lab1/greu.md).
+* [greu](greu.md).
 
