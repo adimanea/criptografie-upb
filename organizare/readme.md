@@ -1,4 +1,4 @@
-# Organizare
+# README
 
 În acest repository voi păstra notițele mele pentru laboratorul de criptografie de la UPB.
 
