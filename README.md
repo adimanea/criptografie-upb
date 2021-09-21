@@ -16,5 +16,6 @@ Implementarea funcțională și, eventual, optimizată într-un limbaj de progra
 
 **PRECIZARE IMPORTANTĂ 3:** Nu se cer cunoștințe privitoare la `git` și GitHub sau controlul versiunilor. Este doar forma preferată de mine pentru organizarea și distribuirea materialelor. Studenții pot accesa liber toate fișierele, le pot descărca și distribui oricum doresc, iar temele le pot încărca într-un cloud.
 
-Ca bonus, dacă studenții preferă, își pot face o ramură \(branch\) cu numele fiecăruia, pe care să încarce contribuțiile la laborator \(teme\).
+Ca bonus, dacă studenții preferă, își pot face o ramură (branch) cu numele fiecăruia, pe care să încarce contribuțiile la laborator (teme).
 
+Extra: *Încerc* să țin documentația și pe Gitbook, [aici](https://app.gitbook.com/@adrianmanea/s/criptografie-upb/v/main/).
