@@ -10,3 +10,8 @@
 * [Exerciții medii](lab1/mediu.md)
 * [Exerciții grele](lab1/greu.md)
 
+## Laborator 2: Aritmetică
+* [README](lab2/README.md)
+* [Exerciții ușoare](lab2/usor.md)
+* [Exerciții medii](lab2/mediu.md)
+* [Exerciții grele](lab2/greu.md)

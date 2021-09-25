@@ -18,4 +18,9 @@ Implementarea funcțională și, eventual, optimizată într-un limbaj de progra
 
 Ca bonus, dacă studenții preferă, își pot face o ramură (branch) cu numele fiecăruia, pe care să încarce contribuțiile la laborator (teme).
 
+**PRECIZARE IMPORTANTĂ 4:** Soluțiile la acest laborator le voi da în Python și uneori în C sau C++.
+Pentru studenții avansați, care preferă Python, recomand soluțiile folosind Jupyter notebook.
+Puteți găsi cîteva indicații de instalare și utilizare 
+[aici](https://github.com/adimanea/fsa-softmat/blob/main/python/2-proglit.md).
+
 Extra: *Încerc* să țin documentația și pe Gitbook, [aici](https://app.gitbook.com/@adrianmanea/s/criptografie-upb/v/main/).
