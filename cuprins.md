@@ -3,7 +3,7 @@
 # Organizare
 * [README](README.md)
 
-# Proiecte
+## Proiecte
 * [Teme](proiecte.md)
 
 ## Laborator 1: Introducere și generalități
