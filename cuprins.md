@@ -3,6 +3,9 @@
 # Organizare
 * [README](README.md)
 
+# Proiecte
+* [Teme](proiecte.md)
+
 ## Laborator 1: Introducere și generalități
 
 * [README](lab1/lab1.md)
