@@ -20,7 +20,7 @@
 * [Exerciții grele](lab2/greu.md)
 
 ## Laborator 3: Teste de primalitate
-* [README](lab3/REDME.md)
+* [README](lab3/README.md)
 * [Exerciții ușoare](lab3/usor.md)
 * [Exerciții medii](lab3/mediu.md)
 
