@@ -170,3 +170,7 @@ blocul 2 ca fiind `cb2 = cb1 * cb1`, apoi cheia pentru blocul 3 ca fiind `cb3 = 
 Pentru acest laborator, cel puțin, aveți libertate totală de a jongla cu asemenea proceduri.
 Evident, în viața reală, lucrurile trebuie să se bazeze cît mai puțin pe aleatoriu
 și cît mai mult pe rezultate eficiente și demonstrabile.
+
+## Exerciții
+- ușoare [aici](./usor.md)
+- medii [aici](./mediu.md)

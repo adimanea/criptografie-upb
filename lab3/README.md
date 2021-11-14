@@ -117,3 +117,7 @@ Astfel, pentru implementare, trebuie să:
 
 **Observație:** Ca și în cazurile de mai devreme, testul Solovay-Strassen poate fi
 implementat exact sau probabilist.
+
+## Exerciții
+- ușoare [aici](./usor.md)
+- medii [aici](./mediu.md)
