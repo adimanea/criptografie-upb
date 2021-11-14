@@ -18,3 +18,13 @@
 * [Exerciții ușoare](lab2/usor.md)
 * [Exerciții medii](lab2/mediu.md)
 * [Exerciții grele](lab2/greu.md)
+
+## Laborator 3: Teste de primalitate
+* [README](lab3/REDME.md)
+* [Exerciții ușoare](lab3/usor.md)
+* [Exerciții medii](lab3/mediu.md)
+
+## Laborator 4: Cifruri flux și pe blocuri
+* [README](lab4/README.md)
+* [Exerciții ușoare](lab4/usor.md)
+* [Exerciții medii](lab4/mediu.md)
