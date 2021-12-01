@@ -28,3 +28,10 @@
 * [README](lab4/README.md)
 * [Exerciții ușoare](lab4/usor.md)
 * [Exerciții medii](lab4/mediu.md)
+
+## Laborator 5: Diffie-Hellman și RSA
+* [README](lab5/README.md)
+* [Exerciții](lab5/exercitii.md)
+
+## Laborator 6: Exerciții recapitulative
+* [Recapitulare + modele test](./recap.md)
