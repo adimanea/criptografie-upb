@@ -25,4 +25,4 @@ Puteți găsi cîteva indicații de instalare și utilizare
 
 Extra: *Încerc* să țin documentația și pe Gitbook, [aici](https://app.gitbook.com/@adrianmanea/s/criptografie-upb/v/main/).
 
-O parte din rezolvările mele la unele exerciții sînt [aici](./cod).
+O parte din rezolvările mele la unele exerciții sînt [aici](https://github.com/adimanea/criptografie-upb/tree/main/cod).
