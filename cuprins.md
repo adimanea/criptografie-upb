@@ -35,3 +35,6 @@
 
 ## Laborator 6: Exerciții recapitulative
 * [Recapitulare + modele test](./recap.md)
+
+## Cod (Rezolvările mele)
+* [Cod](./cod)
