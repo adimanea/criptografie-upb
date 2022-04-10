@@ -1,6 +1,6 @@
 # exemplu: 
-#   - `python3 M3P4.py 14` => verificam daca 14 este prim, si vom returna primul 'a' pentru care nu este prim
-#   - `python3 M3P4.py 999999999` ...
+#   - `python3 M3P5.py 14` => verificam daca 14 este prim, si vom returna primul 'b' pentru care nu este prim
+#   - `python3 M3P5.py 999999999` ...
 import argparse
 
 parser = argparse.ArgumentParser(description='Testul Solovay-Strassen exact. Afisam primul b pentru care b^{(n-1)/2} != (b/n) mod n, daca n nu este prim.')
