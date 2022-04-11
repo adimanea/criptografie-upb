@@ -10,6 +10,8 @@ args = parser.parse_args()
 n = args.n[0]
 print(f'Testam daca numarul {n} este prim.')
 
+# Zn in sens de patratele din Zn
+# todo - poate putem ordona elementele din set (ordered set?)
 Zn = {1}
 for i in range(1, n-1):
     Zn.add(pow(i, 2) % n)
@@ -20,7 +22,7 @@ def iacobi(b, n, Zn):
     if (n % 2 == 0):
         print('pentru calculul Simbolului Iacobi, n trebuie sa fie impar!')
         exit(-1)
-    if (b % n == 0):
+    if (b % n == 0): # todo - putem opri testul in cazul asta
         return 0
     if b in Zn:
         return 1
@@ -31,6 +33,7 @@ mid = int((n-1) / 2)
 for i in range(1, n-1):
     iacobi_curent = iacobi(i, n, Zn)
     # b in sens de b = b^{(n-1)/2}
+    # todo - nu folosi pow... foloseste inmultire modulo
     b = pow(i, mid)
     if (iacobi_curent != b % n and iacobi_curent != b % -n):
         prim = False
