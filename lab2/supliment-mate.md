@@ -34,9 +34,11 @@ Rezolvați sistemele de ecuații în $\mathbb{Z}_n$, cu $n$ indicat:
 Determinați inversele matricelor date (dacă există), cu elemente din $\mathbb{Z}_n$, 
 cu $n$ indicat:
 
-1. $$A = \begin{pmatrix} 1 & -2 & 3 \\ 1 & 1 & 5 \\ 2 & 4 & 0 \end{pmatrix}, n = 7$$
-2. $$A = \begin{pmatrix} 1 & 3 & -1 \\ 5 & -2 & 3 \\ -3 & 1 & 0 \end{pmatrix}, n = 11$$
-3. $$A = \begin{pmatrix} -3 & -2 & 0 \\ -5 & 1 & 2 \\ 0 & 2 & 1 \end{pmatrix}, n = 10$$
+$$A = \begin{pmatrix} 1 & -2 & 3 \\ 1 & 1 & 5 \\ 2 & 4 & 0 \end{pmatrix}, n = 7$$
+
+$$B = \begin{pmatrix} 1 & 3 & -1 \\ 5 & -2 & 3 \\ -3 & 1 & 0 \end{pmatrix}, n = 11$$
+
+$$C = \begin{pmatrix} -3 & -2 & 0 \\ -5 & 1 & 2 \\ 0 & 2 & 1 \end{pmatrix}, n = 10$$
 
 ---
 
