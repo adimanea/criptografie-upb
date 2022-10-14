@@ -8,3 +8,8 @@
 * [ușor](usor.md);
 * [mediu](mediu.md);
 * [greu](greu.md).
+
+---
+
+# Update Octombrie 2022-2023
+Am adăugat exerciții de matematică (și supliment de programare) [aici](./supliment-mate.md).
