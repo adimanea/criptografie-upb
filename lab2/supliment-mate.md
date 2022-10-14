@@ -36,9 +36,9 @@ cu $n$ indicat:
 
 $$A = \left( \matrix{1 & -2 & 3 \cr 1 & 1 & 5 \cr 2 & 4 & 0} \right), n = 7$$
 
-$$B = \begin{pmatrix} 1 & 3 & -1 \\ 5 & -2 & 3 \\ -3 & 1 & 0 \end{pmatrix}, n = 11$$
+$$B = \left( \matrix{1 & 3 & -1 \cr 5 & -2 & 3 \cr -3 & 1 & 0} \right), n = 11$$
 
-$$C = \begin{pmatrix} -3 & -2 & 0 \\ -5 & 1 & 2 \\ 0 & 2 & 1 \end{pmatrix}, n = 10$$
+$$C = \left( \matrix{-3 & -2 & 0 \cr -5 & 1 & 2 \cr 0 & 2 & 1} \right), n = 10$$
 
 ---
 
