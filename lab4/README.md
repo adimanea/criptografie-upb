@@ -26,22 +26,36 @@ deci avem `CRIPT, OGRAF, IEXAT`, de exemplu (am aplicat 3 caractere aleatorii).
 Pentru simplitate, vom folosi următoarele convenții generale:
 
 1. Vom presupune că lucrăm doar cu mesaje alcătuite din caractere din alfabetul englezesc. Așadar, nu vom cripta (vom ignora) diacriticele sau semnele de punctuație. Dacă un cuvînt conține spații, puteți alege dacă le respectați sau le ignorați, adică dacă apar și în mesajul cifrat sau nu.
-2. Vom lucra, *preferabil* cu pozițiile în alfabet (zero-indexate!) ale literelor unui mesaj, pentru a le transforma în numere. De exemplu, cuvîntul `MAMA` devine lista de numere `[12, 0, 12, 0]`. Matematic, vom lucra în `Z26`.
+2. Vom lucra, *preferabil* cu pozițiile în alfabet (zero-indexate!) ale literelor unui mesaj, pentru a le transforma în numere. De exemplu, cuvîntul `MAMA` devine lista de numere `[12, 0, 12, 0]`. 
+
+**IMPORTANT:**
+> Matematic, *ar trebui să lucrăm în `Z26`*, însă cum 26 nu este număr prim și am putea 
+> avea probleme cu rezolvarea ecuațiilor, vom lucra în `Z29`. Astfel, vom mai adăuga 3 simboluri.
 
 Pentru referință, puteți folosi tabelul:
 ```
-A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z
-0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24	25
-```
+A	B	C	D	E	F	G	H	I	J	K	
+0	1	2	3	4	5	6	7	8	9	10
 
-**Observație:** Dacă preferați, puteți lucra și cu punctuație și cu coduri ASCII în loc de pozițiile din alfabet. Dar, în general, problemele vor fi mai grele în acest caz.
+L	M	N	O	P	Q	R	S	T	U	V	
+11	12	13	14	15	16	17	18	19	20	21
+
+W	X	Y	Z   [spațiu]    .   ?
+22	23	24	25     26      27   28
+```
 
 ## Cifrul Caesar
 Unul dintre primele exemple de cifruri a fost un *cifru de substituție*, în care literele
 din mesajul clar sînt înlocuite 1-1 cu altele, obținute după o anumită procedură.
-Matematic, modelăm acest cifru astfel:
 
-**Varianta flux**:
+Avem, în acest caz:
+
+> - **Ecuația de criptare: cod = mesaj + cheie**, care este o ecuație de gradul întîi.
+> - **Ecuația de decriptare: mesaj = cod - cheie**, tot o ecuație de gradul întîi, ce se poate rezolva mereu.
+
+Algoritmic, modelăm acest cifru astfel:
+
+**Algoritmul pentru varianta flux**:
 - se citește de la tastatură un cuvînt sau un mesaj, să zicem în variabila `clar` (de tip `string`);
 - se citește de la tastatură o cheie de criptare, să zicem în variabila `k`;
 - pentru fiecare caracter din `clar`, se asociază poziția în alfabet și se obține un vector de `int`, să zicem în variabila `pozitii_clar`, care are lungimea egală cu `strlen(clar)` și elementele sale vor fi de la 0 la 25;
@@ -58,7 +72,7 @@ pozitii_clar = [14, 3, 4, 17, 20, 3, 22, 17, 20]
 cod = oderudwru
 ```
 
-**Varianta pe blocuri, fără padding**:
+**Algoritmul pentru varianta pe blocuri, fără padding**:
 - se citește de la tastatură `clar`;
 - se citește lungimea blocurilor `b`;
 - se citește *vectorul de chei*, de lungime `b`, `chei[]`;
@@ -82,6 +96,10 @@ cod = qfgtwlezc
 Această metodă funcționează similar cu cifrul Caesar, doar că în loc să se facă criptarea
 folosind o singură cheie, prin translație, `clar = clar + k`, acum se folosesc 2 chei
 și se aplică o omotetie, adică o funcție de gradul 1: `clar = k1 * clar + k2`.
+Avem, deci:
+
+> - **Ecuația de criptare: cod = mesaj * cheie1 + cheie 2**;
+> - **Ecuația de decriptare: mesaj = (cod - cheie2) * invers(cheie1)**, care se poate rezolva mereu în `Z29`, *nu și în `Z26`*.
 
 Exemplu:
 ```
@@ -102,20 +120,27 @@ Ca și în cazul cifrului Caesar, și cifrul afin se poate aplica în metoda flu
 Se generează aleatoriu (sau se dă) o matrice pătratică de lungime `strlen(pozitii_clar)`, cu care
 se înmulțește la stînga vectorul `pozitii_clar`, pentru a obține vectorul criptat.
 
+
+> - **Ecuația de criptare: `COD` = `CHEIE` * `MESAJ`**, unde dacă `MESAJ` are `n` caractere, se consideră vectorul-coloană cu `n` linii, iar `CHEIE` este o matrice `n x n`.
+> - **Ecuația de decriptare: `MESAJ` = invers(`CHEIE`) * `COD`**, care se poate rezolva mereu în `Z29`, *nu și în `Z26`*.
+
 Similar, se poate aplica și varianta pe blocuri, în care se generează cîte o matrice pentru fiecare bloc.
 
-Exemple: vezi în [PDF-ul de la laborator](https://1drv.ms/b/s!AqqJNzpXrVNEjPQwwgOCGqhG1c6yFA?e=SXl5il).
+Exemple (2021): vezi în [PDF-ul de la laborator](https://1drv.ms/b/s!AqqJNzpXrVNEjPQwwgOCGqhG1c6yFA?e=SXl5il).
 
 ## Cifrul Hill afin
 În loc de o matrice, se pot folosi două, astfel că procedura de criptare nu mai înseamnă
 doar înmulțirea vectorului `pozitii_clar` cu o matrice pătratică `A`, ci o transformare
 liniară (afină), de forma `A * pozitii_clar + B`, unde `A` și `B` sînt matrice de dimensiuni potrivite.
 
+> - **Ecuația de criptare: `COD` = `CHEIE1` * `MESAJ` + `CHEIE2`**, unde `COD`, `MESAJ` sînt date matriceal ca mai sus, iar `CHEIE1` și `CHEIE2` au forma `CHEIE` din cazul anterior.
+> - **Ecuația de decriptare: `MESAJ` = invers(`CHEIE1`) * (`COD` - `CHEIE2`)**, ecuație care se poate rezolva mereu în `Z29`, *nu și în `Z26`*.
+
 Din nou, se poate aplica fie în varianta flux, fie pe blocuri.
 
-Exemple: vezi în [PDF-ul de la laborator](https://1drv.ms/b/s!AqqJNzpXrVNEjPQwwgOCGqhG1c6yFA?e=SXl5il).
+Exemple (2021): vezi în [PDF-ul de la laborator](https://1drv.ms/b/s!AqqJNzpXrVNEjPQwwgOCGqhG1c6yFA?e=SXl5il).
 
-## Cifrul Vernam (`XOR`)
+## (Opțional) Cifrul Vernam (`XOR`)
 În acest cifru, se convertește fiecare poziție a caracterelor din `mesaj` în binar,
 se generează un flux de chei (*keystream*) și se aplică `XOR` (adunarea din `Z2`, practic)
 între codurile în binar ale literelor și cheia din flux potrivită.
