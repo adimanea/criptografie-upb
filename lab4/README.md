@@ -196,6 +196,7 @@ Pentru acest laborator, cel puțin, aveți libertate totală de a jongla cu asem
 Evident, în viața reală, lucrurile trebuie să se bazeze cît mai puțin pe aleatoriu
 și cît mai mult pe rezultate eficiente și demonstrabile.
 
-## Exerciții
-- ușoare [aici](./usor.md)
-- medii [aici](./mediu.md)
+## Exerciții (de programare, majoritatea)
+- ușoare [aici](./usor.md);
+- medii [aici](./mediu.md);
+- **de rezolvat de mînă [aici](./../recap.md).**
