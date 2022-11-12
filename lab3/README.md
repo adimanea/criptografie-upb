@@ -119,5 +119,18 @@ Astfel, pentru implementare, trebuie să:
 implementat exact sau probabilist.
 
 ## Exerciții
+### De rezolvat pe caiet
+1. Calculați simbolurile Jacobi: (7/3), (11/7), (15/3), (111/11), (17/7), (13/5), (101/11), (51/3), (47/13), (33/3), (33/17).
+
+2. Verificați primalitatea numerelor: 21, 31, 41, 73, 111, 201, 355, 743, 1003, 1103, 255031 folosind
+testele studiate. Pentru numere mai mici decît 100, folosiți numai verificări exacte, iar pentru
+celelalte, folosiți verificări probabiliste, cu 7 mostre:
+- ciurul lui Eratostene;
+- testul Fermat exact;
+- testul Fermat probabilist;
+- testul Solovay-Strassen exact;
+- testul Solovay-Strassen probabilist.
+
+### De programare
 - ușoare [aici](./usor.md)
 - medii [aici](./mediu.md)
