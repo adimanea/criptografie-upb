@@ -1,4 +1,24 @@
-# Exerciții
+# Exerciții pe caiet
+
+1. Implementați algoritmul **Diffie-Hellman** în următoarele cazuri (păstrăm notația din [teorie](./README.md#diffie-hellman)). Calculați cheia comună `K` și, opțional, folosiți-o pentru o criptare Caesar:
+   1. `a = 5, b = 7, p = 13, alpha = 5`;
+   2. `a = 6, b = 8, p = 11, alpha = 7`;
+   3. `a = 10, b = 3, p = 17, alpha = 10`;
+   4. `a = 9, b = 5, p = 19, alpha = 20`;
+   5. `a = 11, b = 11, p = 17, alpha = 30`;
+2. Implementați algoritmul **El Gamal** în următoarele cazuri (păstrăm notația din [teorie](./README.md/#algoritmul-el-gamal)), *cu validarea datelor*:
+   1. Alice: `G = Z7, g = 3, x = 5`. Calculați cheia publică și cheia privată. Bob: Folosiți `M = 3`, transformarea identică, `y = 4` și calculați secretul public și cifrul `(c1, c2)`. Realizați decriptarea, calculînd `s, s^{-1}, m` și `M`.
+   2. Alice: `G = Z11, g = 7, x = 5`. Calculați cheia publică și cheia privată. Bob: Folosiți `M = 7` și transformarea `f(x) = x + 3`, `y = 6` și calculați secretul public și cifrul `(c1, c2)`. Realizați decriptarea, calculînd `s, s^{-1}, m` și `M`.
+   3. Alice: `G = Z13, g = 8, x = 11`. Calculați cheia publică și cheia privată. Bob: Folosiți `M = 3` și transformarea `f(x) = 2x - 1`, `y = 5` și calculați secretul public și cifrul `(c1, c2)`. Realizați decriptarea, calculînd `s, s^{-1}, m` și `M`.
+3. Implementați algoritmul **RSA** în următoarele cazuri (păstrăm notația din [teorie](./README.md/#rsa)). Alegeți voi  exponenții de criptare și de decriptare, *cu validarea datelor* și (de)criptați mesajul `m = 7` în fiecare caz:
+   1. `p = 7, q = 11`;
+   2. `p = 11, q = 13`;
+   3. `p = 5, q = 19`;
+   4. `p = 17, q = 11`;
+   5. `p = 23, q = 17`.
+
+
+# Exerciții de programare
 
 L5E1. Scrieți un program care să calculeze toate puterile elementelor dintr-un
 grup multiplicativ `Zn`. Cu alte cuvinte, se citește de la tastatură `n`
