@@ -9,7 +9,7 @@
 2. Implementați algoritmul **El Gamal** în următoarele cazuri (păstrăm notația din [teorie](./README.md/#algoritmul-el-gamal)), *cu validarea datelor*:
    1. Alice: `G = Z7, g = 3, x = 5`. Calculați cheia publică și cheia privată. Bob: Folosiți `M = 3`, transformarea identică, `y = 4` și calculați secretul public și cifrul `(c1, c2)`. Realizați decriptarea, calculînd `s, s^{-1}, m` și `M`.
    2. Alice: `G = Z11, g = 7, x = 5`. Calculați cheia publică și cheia privată. Bob: Folosiți `M = 7` și transformarea `f(x) = x + 3`, `y = 6` și calculați secretul public și cifrul `(c1, c2)`. Realizați decriptarea, calculînd `s, s^{-1}, m` și `M`.
-   3. Alice: `G = Z13, g = 8, x = 11`. Calculați cheia publică și cheia privată. Bob: Folosiți `M = 3` și transformarea `f(x) = 2x - 1`, `y = 5` și calculați secretul public și cifrul `(c1, c2)`. Realizați decriptarea, calculînd `s, s^{-1}, m` și `M`.
+   3. Alice: `G = Z13, g = 7, x = 11`. Calculați cheia publică și cheia privată. Bob: Folosiți `M = 3` și transformarea `f(x) = 2x - 1`, `y = 5` și calculați secretul public și cifrul `(c1, c2)`. Realizați decriptarea, calculînd `s, s^{-1}, m` și `M`.
 3. Implementați algoritmul **RSA** în următoarele cazuri (păstrăm notația din [teorie](./README.md/#rsa)). Alegeți voi  exponenții de criptare și de decriptare, *cu validarea datelor* și (de)criptați mesajul `m = 7` în fiecare caz:
    1. `p = 7, q = 11`;
    2. `p = 11, q = 13`;
