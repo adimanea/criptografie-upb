@@ -140,10 +140,10 @@ Acest algoritm are 3 etape:
 3. Algoritmul de decriptare.
 
 Presupunem că Alice vrea să comunice cu Bob. Se alege un număr prim mare, `p`,
-iar toate calculele se vor face modulo `q`, deci în `Zq`.
+iar toate calculele se vor face modulo `q`, deci în `Zq - {0}`.
 
 **Generarea cheii**:
-- Alice alege un _grup ciclic_ `G`, de ordin `q`, cu un generator `g`. Fie `e` elementul
+- Alice alege un _grup ciclic_ `G`, de ordin `q - 1`, cu un generator `g`. Fie `e` elementul
   neutru al acestui grup.
 - Alice alege un întreg aleatoriu `x` din `{1, 2, ..., q - 1}`;
 - Alice calculează `h = g^x mod q`;
