@@ -189,7 +189,11 @@ că toate numerele mai mici decît `p` vor fi coprime cu el.
 
 Așadar, de exemplu, `phi(13) = 12`, `phi(5) = 4` etc.
 
-În plus, *funcția `phi` este multiplicativă*, deci `phi(x * y) = phi(x) * phi(y)`.
+În plus, *funcția `phi` este multiplicativă*, deci `phi(x * y) = phi(x) * phi(y)` și are loc:
+
+**Teoremă:** 
+
+$\varphi(n) = \displaystyle\prod_{p \mid n} n \cdot \left( 1 - \dfrac{1}{p} \right)$.
 
 ## RSA
 Procedura urmează pașii:
