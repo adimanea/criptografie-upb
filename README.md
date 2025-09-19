@@ -23,6 +23,4 @@ Pentru studenții avansați, care preferă Python, recomand soluțiile folosind 
 Puteți găsi cîteva indicații de instalare și utilizare 
 [aici](https://github.com/adimanea/fsa-softmat/blob/main/python/2-proglit.md).
 
-Extra: *Încerc* să țin documentația și pe Gitbook, [aici](https://app.gitbook.com/@adrianmanea/s/criptografie-upb/v/main/).
-
 O parte din rezolvările mele la unele exerciții sînt [aici](https://github.com/adimanea/criptografie-upb/tree/main/cod).
