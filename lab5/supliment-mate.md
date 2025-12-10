@@ -1,6 +1,6 @@
 # Supliment matematic
 
-1. Pentru cazurile de mai jos, calculați $\log_a(b)$ în $\mathbb{Z}_n$, dacă există:
+1. Pentru cazurile de mai jos, calculați $\log_a(b)$ în $\mathbb{Z}_n^\ast$, dacă există:
 
 * a = 5, b = 7, n = 11
 * a = 11, b = 2, n = 13
@@ -10,7 +10,7 @@
 
 -----
 
-2. Pentru cazurile de mai jos, calculați ordinul elementului $a$ în $\mathbb{Z}_n$:
+2. Pentru cazurile de mai jos, calculați ordinul elementului $a$ în $\mathbb{Z}_n^\ast$:
 
 * a = 3, n = 11.
 * a = 7, n = 13.
@@ -20,7 +20,7 @@
 
 -----
 
-3. Pentru cazurile de mai jos, verificați dacă grupul $\mathbb{Z}_n$ este ciclic, cu generatorul $a$:
+3. Pentru cazurile de mai jos, verificați dacă grupul $\mathbb{Z}_n^\ast$ este ciclic, cu generatorul $a$:
 
 * a = 5, n = 11.
 * a = 7, n = 13.
